@@ -1,3 +1,21 @@
 OnePlus6:
+  PrettyName: Oneplus 6
+  DeviceType: phone
+  GridUnit: 21
+  SupportedOrientations:
+    - Portrait
+    - Landscape
+    - InvertedLandscape
+  MirAndroidPlatformServerBackpressure:
+    - false
+  MirAndroidPlatformServerPartialUpdates:
+    - true
+  MirAndroidPlatformServerEglSync:
+    - false
+  MirAndroidPlatformClientEglFlush:
+    - "!/usr/bin/unity8,!/usr/bin/lomiri,all"
   DoubleTapToWake:
     - /proc/touchpanel/double_tap_enable|1|0
+  XwaylandShm:
+    - true
+

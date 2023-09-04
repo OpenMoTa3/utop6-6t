@@ -3,6 +3,11 @@
 # These services are disabled due to them being unnecessary critical process
 # and crash loop.
 
+service vendor.fps_hal android.hardware.biometrics.fingerprint@2.1-service_HYBRIS_DISABLED
+    disabled
+    oneshot
+    override
+
 service lmkd lmkd_HYBRIS_DISABLED
     disabled
     oneshot

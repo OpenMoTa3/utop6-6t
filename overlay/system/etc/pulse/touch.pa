@@ -44,7 +44,7 @@ load-module module-null-source source_name=source.fake.sco rate=8000 channels=1
 
 ### Automatically load the Pulseaudio Droid
 .ifexists module-droid-discover.so
-load-module module-droid-discover voice_virtual_stream=true hidl_args='helper=false'
+load-module module-droid-discover voice_virtual_stream=true rate=48000 hidl_args='helper=false'
 .endif
 
 ### Automatically load the trust-store module

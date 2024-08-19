@@ -3,3 +3,9 @@ include:
 
 variables:
   BUILD_DEVEL_FLASHABLE_FOCAL: 1
+
+build:
+  tags: [ubports]
+
+devel-flashable:
+  allow_failure: true

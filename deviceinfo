@@ -9,7 +9,7 @@ deviceinfo_kernel_cmdline=" androidboot.hardware=qcom androidboot.console=ttyMSM
 deviceinfo_kernel_clang_compile="false"
 deviceinfo_kernel_apply_overlay="false"
 deviceinfo_generate_bootimg="true"
-deviceinfo_bootimg_header_version="2"
+deviceinfo_bootimg_header_version="1"
 deviceinfo_bootimg_os_version="10"
 deviceinfo_halium_version="10"
 deviceinfo_bootimg_os_patch_level="2018-12"

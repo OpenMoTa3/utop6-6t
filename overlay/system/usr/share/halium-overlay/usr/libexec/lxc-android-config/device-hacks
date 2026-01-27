@@ -8,9 +8,10 @@ do
     sleep 1
 done
 
-if [ -f /vendor/firmware/ipa_fws.mdt ]; then
-    echo 1 > /dev/ipa
-fi
+echo ON > /dev/wlan
+
+iw phy0 wowlan enable magic-packet disconnect
+
 # Enable fix audio mic service, if disabled, which should
 # only happen on first boot or maybe after an OTA-update
 if ! systemctl --global -q is-enabled check-audio-mic.service; then

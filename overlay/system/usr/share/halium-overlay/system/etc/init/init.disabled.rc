@@ -7,8 +7,3 @@ service vendor.fps_hal android.hardware.biometrics.fingerprint@2.1-service_HYBRI
     disabled
     oneshot
     override
-
-service cnss_diag cnss_diag_HYBRIS_DISABLED
-    disabled
-    oneshot
-    override

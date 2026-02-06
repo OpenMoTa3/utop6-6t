@@ -12,7 +12,7 @@ on boot
     # load wlan module
     insmod /system/vendor/lib/modules/qca_cld3_wlan.ko
 
-service vendor.fps_hal android.hardware.biometrics.fingerprint@2.1-service_HYBRIS_DISABLED
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service_HYBRIS_DISABLED
     disabled
     oneshot
     override

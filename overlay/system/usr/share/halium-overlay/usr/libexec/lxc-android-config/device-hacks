@@ -1,8 +1,16 @@
 #!/bin/sh
 
-echo ON > /dev/wlan
+if [ ! -e /dev/ipa ]; then
+    exit 0
+fi
+while ! mountpoint -q -- /android/vendor
+do
+    sleep 1
+done
 
-iw phy0 wowlan enable magic-packet disconnect
+if [ -f /vendor/firmware/ipa_fws.mdt ]; then
+    echo 1 > /dev/ipa
+fi
 
 # Enable fix audio mic service, if disabled, which should
 # only happen on first boot or maybe after an OTA-update

@@ -31,8 +31,8 @@ enchilada:
   XwaylandShm:
     - true
   VibrateDurationExtraMs: 40
-  OfonoPlugin: binder
-  OfonoImplementsIms: true
+  #OfonoPlugin: binder
+  #OfonoImplementsIms: true
   FilesystemEncryption: true
 
 fajita:
@@ -68,6 +68,6 @@ fajita:
   XwaylandShm:
     - true
   VibrateDurationExtraMs: 40
-  OfonoPlugin: binder
-  OfonoImplementsIms: true
+  #OfonoPlugin: binder
+  #OfonoImplementsIms: true
   FilesystemEncryption: true
